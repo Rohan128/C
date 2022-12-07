@@ -6,6 +6,7 @@ jobs:
       steps:
       - name: Installing Az CLI 
         run: |
+         python3 -m pip install --upgrade pip
          pip3 install -q --upgrade --pre azure-cli
          az --version
       
