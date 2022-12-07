@@ -6,8 +6,7 @@ jobs:
       steps:
       - name: Installing Az CLI 
         run: |
-         sudo apt-get update
-         sudo apt-get install azure-cli
+         pip3 install -q --upgrade --pre azure-cli
          az --version
       
 
