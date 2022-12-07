@@ -19,6 +19,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           environment: 'AzureChina'
+          enable-AzPSSession: true
 
         # Deploy ARM template
       - name: Run ARM deploy
